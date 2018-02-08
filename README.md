@@ -110,8 +110,9 @@ $ kubectl attach <podname> -i                             # Attach to Running Co
 $ kubectl port-forward <podname> <local-and-remote-port>  # Forward port of Pod to your local machine
 $ kubectl port-forward <servicename> <port>               # Forward port to service
 $ kubectl exec <pod-name> -- ls /                         # Run command in existing pod (1 container case) 
-$ kubectl exec -it <pod-name> -- /bin/bash                    # Run /bin/bash command in existing pod
+$ kubectl exec -it <pod-name> -- /bin/bash                # Run /bin/bash command in existing pod
 $ kubectl exec <pod-name> -c <container-name> -- ls /     # Run command in existing pod (multi-container case) 
+$ kubectl run -it --rm --restart=Never busybox --image=busybox sh
 ```
 ## Helpful Resources
 * [Kubernetes Cheat Sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
