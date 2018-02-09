@@ -95,7 +95,7 @@ $ kubectl get nodes -o jsonpath='{range .items[*]}{@.metadata.name}:{range @.sta
 ```
 $ kubectl label pods <pod-name> new-label=awesome                  # Add a Label
 $ kubectl annotate pods <pod-name> icon-url=http://goo.gl/XXBTWq   # Add an annotation
-
+$ kubectl expose deployments <deployment-name> --port=80 --target-port=8000
 # TODO: examples of kubectl edit, patch, delete, replace, scale, and rolling-update commands.
 ```
 
