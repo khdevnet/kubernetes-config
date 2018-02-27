@@ -61,6 +61,8 @@ $ kubectl get pods --all-namespaces             # List all pods in all namespace
 $ kubectl get pods -o wide                      # List all pods in the namespace, with more details
 $ kubectl get rc <rc-name>                      # List a particular replication controller
 $ kubectl get replicationcontroller <rc-name>   # List a particular RC
+$ kubectl get PersistentVolumes                 # List all PersistentVolumes
+$ kubectl get PersistentVolumeClaim             # List all PersistentVolumeClaims
 
 # Verbose output
 $ kubectl describe nodes <node-name>
