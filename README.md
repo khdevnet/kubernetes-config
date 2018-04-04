@@ -104,6 +104,11 @@ $ kubectl delete pod <pod-name> --grace-period=0 --force           # Force Pod d
 # TODO: examples of kubectl edit, patch, delete, replace, scale, and rolling-update commands.
 ```
 
+## Run pods
+```
+kubectl run NAME --image=image [--env="key=value"] [--port=port] [--replicas=replicas] [--dry-run=bool] [--overrides=inline-json] [--command] -- [COMMAND] [args...]
+```
+
 ## Interacting with running Pods
 
 ```
