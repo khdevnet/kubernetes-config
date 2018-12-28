@@ -123,6 +123,7 @@ $ kubectl exec <pod-name> -- ls /                         # Run command in exist
 $ kubectl exec -it <pod-name> -- /bin/bash                # Run /bin/bash command in existing pod
 $ kubectl exec <pod-name> -c <container-name> -- ls /     # Run command in existing pod (multi-container case) 
 $ kubectl run -it --rm --restart=Never busybox --image=busybox sh
+$ kubectl run curl-<YOUR NAME> --image=radial/busyboxplus:curl -i --tty --rm
 ```
 ## Helpful Resources
 * [Kubernetes Cheat Sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
